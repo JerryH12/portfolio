@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+h1 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 18px;
+    color: lightskyblue;
+}
+
+.myName {
+    /*  color:#ffff80; 
+     color: coral;*/
+     color: #bf4080;
+     color: #fff;
+     font-weight: 400;
+     font-size: 24px;
+  }
+
+
+
+body {
+    background:  #0d1e4b url("pattern-test.png") 
+     top right no-repeat;
+     font-family: "Open Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     font-variation-settings:
+     "wdth" 100;
+    
+}
+
+.container {
+    /*#020c24    #00134d  #000d33*/
+    line-height: 24px;
+    color: #cce6ff;
+    padding: 40px;
+    width: 900px;
+    margin-left: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 800px;
+}
+
+nav {
+    text-align: center;
+}
+
+section {
+    display:flex;
+    justify-content: space-between;
+    min-height: 70vh;
+    padding: 10px;
+}
+
+article {
+    max-width: 800px;
+}
+
+aside {
+    align-self: flex-end;
+}
+
+aside a {
+  text-decoration:none;
+  color: #fff;
+}
+
+footer {
+    text-align: center;
+    color: gray;
+    padding: 20px;
+}
+

@@ -1,0 +1,19 @@
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.menu li a {
+   
+    color:lightcyan;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
