@@ -1,0 +1,151 @@
+import React from "react";
+
+function Icon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 535 531">
+      <defs>
+        <filter
+          id="filter5927"
+          width="1"
+          height="1"
+          x="0"
+          y="0"
+          colorInterpolationFilters="sRGB"
+        >
+          <feGaussianBlur
+            in="SourceAlpha"
+            result="blur"
+            stdDeviation="4,000000"
+          ></feGaussianBlur>
+          <feColorMatrix
+            result="bluralpha"
+            type="matrix"
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0,500000 0"
+          ></feColorMatrix>
+          <feOffset
+            dx="8,000000"
+            dy="8,000000"
+            in="bluralpha"
+            result="offsetBlur"
+          ></feOffset>
+          <feMerge result="fbSourceGraphic">
+            <feMergeNode in="offsetBlur"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+          </feMerge>
+          <feColorMatrix
+            in="fbSourceGraphic"
+            result="fbSourceGraphicAlpha"
+            values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+          ></feColorMatrix>
+          <feGaussianBlur
+            in="fbSourceGraphic"
+            result="result8"
+            stdDeviation="10"
+          ></feGaussianBlur>
+          <feComposite
+            in="fbSourceGraphic"
+            in2="result8"
+            operator="in"
+            result="result6"
+          ></feComposite>
+          <feComposite
+            in2="result6"
+            operator="in"
+            result="result11"
+          ></feComposite>
+          <feFlood floodColor="#FFDE55" result="result10"></feFlood>
+          <feBlend
+            in="result11"
+            in2="result10"
+            mode="normal"
+            result="result12"
+          ></feBlend>
+          <feComposite
+            in="result12"
+            in2="fbSourceGraphic"
+            operator="in"
+            result="fbSourceGraphic"
+          ></feComposite>
+          <feColorMatrix
+            in="fbSourceGraphic"
+            result="fbSourceGraphicAlpha"
+            values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+          ></feColorMatrix>
+          <feGaussianBlur
+            in="fbSourceGraphicAlpha"
+            result="blur"
+            stdDeviation="4,000000"
+          ></feGaussianBlur>
+          <feColorMatrix
+            result="bluralpha"
+            type="matrix"
+            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0,500000 0"
+          ></feColorMatrix>
+          <feOffset
+            dx="8,000000"
+            dy="8,000000"
+            in="bluralpha"
+            result="offsetBlur"
+          ></feOffset>
+          <feMerge result="fbSourceGraphic">
+            <feMergeNode in="offsetBlur"></feMergeNode>
+            <feMergeNode in="fbSourceGraphic"></feMergeNode>
+          </feMerge>
+          <feColorMatrix
+            in="fbSourceGraphic"
+            result="fbSourceGraphicAlpha"
+            values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+          ></feColorMatrix>
+          <feColorMatrix
+            in="fbSourceGraphic"
+            type="saturate"
+            values="0"
+          ></feColorMatrix>
+        </filter>
+        <filter
+          id="filter3649"
+          width="1"
+          height="1"
+          x="0"
+          y="0"
+          colorInterpolationFilters="sRGB"
+        >
+          <feColorMatrix type="saturate" values="0"></feColorMatrix>
+        </filter>
+      </defs>
+      <g transform="translate(0 -521.36)">
+        <path
+          fill="none"
+          stroke="#a3a3a3"
+          strokeLinejoin="round"
+          strokeWidth="55"
+          d="M139.59 551.39h252.13c61.025 0 110.15 44.742 110.15 100.32v271.8c0 55.577-49.129 100.32-110.15 100.32H139.59c-61.025 0-110.15-44.742-110.15-100.32v-271.8c0-55.577 49.129-100.32 110.15-100.32z"
+          filter="url(#filter3649)"
+        ></path>
+        <g
+          fill="#00dc00"
+          stroke="#000"
+          strokeWidth="4.912"
+          filter="url(#filter5927)"
+          transform="matrix(.98914 0 0 1.0476 1237 562.46)"
+        >
+          <g
+            fill="#00dc00"
+            stroke="#000"
+            strokeWidth="10.229"
+            transform="translate(-316.23 468.11) scale(.48018)"
+          >
+            <path
+              fill="#00dc00"
+              stroke="#000"
+              strokeWidth="10.229"
+              d="M-1747.2-549.3l287.72 333.9c146.6-298.83 326.06-573.74 614.52-834.75-215.89 121.82-453.86 353.14-657.14 639.38l-245.1-138.53z"
+            ></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+}
+
+export default Icon;
