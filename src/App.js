@@ -8,7 +8,9 @@ import KeyboardImage from './keyboard.png';
 import Menu from './components/Menu';
 import Bookmark from './components/Bookmark';
 
+
 function App() {
+
   return (
     <>
    <header>
@@ -26,7 +28,10 @@ function App() {
          <h1>Website developer</h1>
           <p>
           Hello,
-          I'm Jerry and I develop web sites, both backend and frontend. It's fun and addictive. </p>
+          I'm Jerry and I develop websites, both backend and frontend. It's fun and addictive. On the following pages you can read more about me and my background. I created this portfolio with React.
+          </p>
+          <a className="linkButton" target="_blank" href="https://jerryh12.github.io/my-cv/">Download CV</a>
+          <a className="linkButton" href="#P4">Contact Info</a>
          </article>
       </section>
       <section id="P1">
@@ -39,8 +44,17 @@ function App() {
          
         </div>
         <div style={{float: "left", maxWidth: "450px"}}>
-          <p>  I have an academic degree in web programming and three years work experience.</p>
+          <p>  I have an academic degree in web programming and worked as a programmer for three years.</p>
           <p> For the most part, I'm self-taught. Started coding as a teenager and still doing it almost half a century later.</p>
+          <p>
+            I can design a webpage and is good at CSS and HTML but more at home with coding – the boring stuff that nobody cares about as long as it works. Problem solving and algorithms is what I find most rewarding.
+          </p>
+          <p>
+            I worked with C# ASP.NET for one year. My tasks was to update a dating site and build another application for deviation reports. Also professionally created websites with PHP and MySQL. On my own done game programming with C++ and Python. I like learning new things. 
+          </p>
+          <p>
+            Other things I enjoy is to study languages and drawing. 
+          </p>
           </div>
         </article>
         <aside>
@@ -50,13 +64,13 @@ function App() {
       <section id="P2">
        <article>
 
+       <h1>Experience</h1>
       {/* Dsiplay as table for large screens. */ }
        <div className="largeScreen">
-       <h1>Experience</h1>
-       
         <div className="leftColumn">
           <h2>Frontend development</h2>
           <table>
+            <tbody>
             <tr>
               <td>
                 <img width="30" height="30" src={Checkmark} alt="checked" />
@@ -103,11 +117,13 @@ function App() {
                <h4>Basic</h4>
               </td>
             </tr>
+            </tbody>
           </table>
         </div>
         <div className="leftColumn">
           <h2>Backend development</h2>
           <table>
+            <tbody>
             <tr>
               <td>
                 <img width="30" height="30" src={Checkmark} alt="checked" />
@@ -170,6 +186,7 @@ function App() {
                 &nbsp;
               </td>
             </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -287,14 +304,9 @@ function App() {
          </article>    
         </section>
     </div>
-    <nav>
-        <ul className="menuFooter">
-            <li><a href="#P1">About</a></li>
-            <li><a href="#P2">Experience</a></li>
-            <li><a href="#P3">Projects</a></li>
-            <li><a href="#P4">Contact</a></li>
-        </ul>
-      </nav>
+    <nav className="bottomNav">
+      <Menu />
+    </nav>
     <footer>
      Copyright &copy; 2024 Jerry Hall. All Rights Reserved.
      </footer></>

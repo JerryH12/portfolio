@@ -52,9 +52,8 @@ p {
 body {
     /*background:  #0d1e4b url("pattern-test.png") 
      top right no-repeat;*/
-     background: #0d1e4b url("gradient.svg") top right no-repeat;
-     background-size: 55%;
-
+     background: #0d1e4b url("gradient2.svg") 100% 5% no-repeat;
+     background-size: 40%;
      font-family: "Open Sans", sans-serif;
      font-optical-sizing: auto;
      font-weight: 400;
@@ -66,7 +65,7 @@ body {
 
 .container {
     /*#020c24    #00134d  #000d33*/
-    line-height: 24px;
+    line-height: 26px;
     color: #cce6ff;
     padding: 40px;
    /* width: 900px;*/
@@ -175,14 +174,27 @@ h4 {
        text-align: left;
     }
 
-    .menuFooter li {
-            display: block;
-            margin: 0;
-        }
-    .menuFooter li a {
+    .bottomNav .menu li a {
         font-size: 16px;
     }
 }
+
+a.linkButton:link, a.linkButton:visited {
+    /*background-color: #f44336;*/
+  
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    margin: 0 20px;
+  }
+  
+  a.linkButton:hover, a.linkButton:active {
+    background-color: #0d1e7d;;
+  }
 
 .smallScreen ul {
     list-style-type: none;

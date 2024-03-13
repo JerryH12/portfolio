@@ -1,11 +1,14 @@
 import './menu.css';
-import { useRef, useEffect} from 'react';
+import { useRef, useEffect } from 'react';
+import { useWindowSize } from "@uidotdev/usehooks";
 
 function Menu(){
 
     const listRef = useRef(null);
+    const buttonRef = useRef(null);
 
     useEffect(()=>{
+        
         //let anchorlinks = document.querySelectorAll('a[href^="#"]')
         const listNode = listRef.current;
         let anchorlinks = listNode.querySelectorAll('li > a[href^="#"]');
@@ -25,23 +28,30 @@ function Menu(){
         }   
     });
 
+   
+    const size = useWindowSize();
+    if(size.width>650 && buttonRef.current.lastElementChild.style.display=="none"){
+        listRef.current.style.visibility="visible";
+    }
+   
     let showMenu=()=>{
         listRef.current.style.visibility="visible";
-        listRef.current.previousElementSibling.previousElementSibling.style.display="none";
-        listRef.current.previousElementSibling.style.display="block";
+        buttonRef.current.firstElementChild.style.display="none";
+        buttonRef.current.lastElementChild.style.display="block";  
     }
 
     let hideMenu=()=>{
-        listRef.current.style.visibility="hidden";
-        listRef.current.previousElementSibling.previousElementSibling.style.display="block";
-        listRef.current.previousElementSibling.style.display="none";
+        listRef.current.style.visibility="hidden"
+        buttonRef.current.firstElementChild.style.display="block";
+        buttonRef.current.lastElementChild.style.display="none";
     }
     
     return (
         <>
-        <div className="buttonShow" onClick={showMenu}></div>
-        <div className="buttonHide" onClick={hideMenu}></div>
-
+        <div ref={buttonRef} className="buttons">
+            <div className="buttonShow" onClick={showMenu}></div>
+            <div className="buttonHide" onClick={hideMenu}></div>
+        </div>
         <ul ref={listRef} className="menu">
             <li><a href="#P1">About</a></li>
             <li><a href="#P2">Experience</a></li>

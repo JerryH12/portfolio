@@ -18,40 +18,40 @@ ul.menu {
     font-weight: 300;
 }
 
-@media screem and (max-width: 750px) {
-    ul.menu {
-        visibility: visible;
-    }
-}
-
 @media screen and (max-width: 650px) {
 
-    .buttonShow, .buttonHide {
+    header .buttonShow, .buttonHide {
         width: 30px;
         height: 30px; 
         position: relative;
         left: 100px;
     }
 
-    .buttonShow {
+    header .buttonShow {
         background: #0d1e4b url("menu-open.svg") top right no-repeat;
         background-size: 30px 30px;
     }
 
-    .buttonHide {
+    header .buttonHide {
         background: #0d1e4b url("menu-close.svg") top right no-repeat;
         background-size: 30px 30px;
         display:none;
     }
 
-    ul.menu {
+    header ul.menu {
         padding: 20px;
         background: #0d1e4b;
         visibility: hidden;
     }
 
-    .menu li {
+    header .menu li {
         display: block;
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    header ul.menu {
+        visibility: visible;
     }
 }
