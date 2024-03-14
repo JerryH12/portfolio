@@ -1,11 +1,12 @@
 import './menu.css';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { useWindowSize } from "@uidotdev/usehooks";
 
 function Menu(){
 
     const listRef = useRef(null);
     const buttonRef = useRef(null);
+    const [style, setStyle] = useState({});
 
     useEffect(()=>{
         
@@ -28,20 +29,23 @@ function Menu(){
         }   
     });
 
-   
     const size = useWindowSize();
     if(size.width>650 && buttonRef.current.lastElementChild.style.display=="none"){
         listRef.current.style.visibility="visible";
     }
    
     let showMenu=()=>{
-        listRef.current.style.visibility="visible";
+        //listRef.current.style.visibility="visible";
+
+        setStyle({visibility: "visible"});
         buttonRef.current.firstElementChild.style.display="none";
         buttonRef.current.lastElementChild.style.display="block";  
     }
 
     let hideMenu=()=>{
-        listRef.current.style.visibility="hidden"
+        //listRef.current.style.visibility="hidden"
+
+        setStyle({visibility: "hidden"});
         buttonRef.current.firstElementChild.style.display="block";
         buttonRef.current.lastElementChild.style.display="none";
     }
@@ -52,7 +56,7 @@ function Menu(){
             <div className="buttonShow" onClick={showMenu}></div>
             <div className="buttonHide" onClick={hideMenu}></div>
         </div>
-        <ul ref={listRef} className="menu">
+        <ul ref={listRef} className="menu" style={style}>
             <li><a href="#P1">About</a></li>
             <li><a href="#P2">Experience</a></li>
             <li><a href="#P3">Projects</a></li>
