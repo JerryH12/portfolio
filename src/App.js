@@ -43,7 +43,7 @@ function App() {
           <a style={{color: "gray", fontStyle: "italic", fontSize: "12px", position: "relative", top: "-40px"}} href="https://www.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#fromView=search&page=1&position=34&uuid=be6540cc-4f32-4dd6-a422-d1a680486728">Image by storyset on Freepik</a>
          
         </div>
-        <div style={{float: "left", maxWidth: "450px"}}>
+        <div className="about" style={{float: "left"}}>
           <p>  I have an academic degree in web programming and worked as a programmer for three years.</p>
           <p> For the most part, I'm self-taught. Started coding as a teenager and still doing it almost half a century later.</p>
           <p>
@@ -282,10 +282,10 @@ function App() {
             <h1>Projects</h1>
             <div className="projects">
               <div style={{"width": 330}} className="leftColumn">   
-                  <img width="90%" height="90%" src={ProjectImage1} alt="project-1" />  
+                  <img width="88%" height="85%" src={ProjectImage1} alt="project-1" />  
               </div> 
               <div style={{"width": 330}} className="leftColumn">
-                <img width="90%" height="90%" src={ProjectImage2} alt="project-2" />
+                <img width="88%" height="85%" src={ProjectImage2} alt="project-2" />
               </div>
             </div>
           </article>

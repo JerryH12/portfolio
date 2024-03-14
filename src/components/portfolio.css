@@ -150,6 +150,10 @@ h4 {
    text-align: center;
 }
 
+.about {
+    max-width: 450px;
+}
+
 .column1{
    
     width: 180px;
@@ -168,6 +172,10 @@ h4 {
     .container {
         margin-left: 0;
         padding: 10px;
+    }
+
+    .about {
+        max-width: 400px;
     }
 
     .contact {
