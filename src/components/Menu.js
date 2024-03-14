@@ -30,7 +30,7 @@ function Menu(){
     });
 
     const size = useWindowSize();
-    if(size.width>650 && buttonRef.current.lastElementChild.style.display=="none"){
+    if(size.width>650 && buttonRef.current.lastElementChild.style.display==="none"){
         listRef.current.style.visibility="visible";
     }
    
