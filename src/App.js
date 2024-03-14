@@ -282,10 +282,10 @@ function App() {
             <h1>Projects</h1>
             <div className="projects">
               <div style={{"width": 330}} className="leftColumn">   
-                  <img width="88%" height="85%" src={ProjectImage1} alt="project-1" />  
+                  <img width="85%" height="85%" src={ProjectImage1} alt="project-1" />  
               </div> 
               <div style={{"width": 330}} className="leftColumn">
-                <img width="88%" height="85%" src={ProjectImage2} alt="project-2" />
+                <img width="85%" height="85%" src={ProjectImage2} alt="project-2" />
               </div>
             </div>
           </article>
