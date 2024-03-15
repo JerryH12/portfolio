@@ -1,6 +1,6 @@
 import './menu.css';
 import { useRef, useEffect, useState } from 'react';
-import { useWindowSize } from "@uidotdev/usehooks";
+//import { useWindowSize } from "@uidotdev/usehooks";
 
 function Menu(){
 
@@ -29,10 +29,10 @@ function Menu(){
         }   
     });
 
-    const size = useWindowSize();
-    if(size.width>650 && buttonRef.current.lastElementChild.style.display==="none"){
-        listRef.current.style.visibility="visible";
-    }
+    // const size = useWindowSize();
+    // if(size.width>650 && buttonRef.current.lastElementChild.style.display==="none"){
+    //     listRef.current.style.visibility="visible";
+    // }
    
     let showMenu=()=>{
         //listRef.current.style.visibility="visible";
