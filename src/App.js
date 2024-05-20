@@ -7,7 +7,7 @@ import ProjectImage2 from './project-2.png';
 import KeyboardImage from './keyboard.png';
 import Menu from './components/Menu';
 import Bookmark from './components/Bookmark';
-
+import EmailInfo from './components/info.png';
 
 function App() {
 
@@ -282,10 +282,13 @@ function App() {
             <h1>Projects</h1>
             <div className="projects">
               <div style={{"width": 330}} className="leftColumn">   
-                  <img width="85%" height="85%" src={ProjectImage1} alt="project-1" />  
+                  <a href="https://github.com/JerryH12/MovieDatabase">Movie Database</a>
               </div> 
               <div style={{"width": 330}} className="leftColumn">
-                <img width="85%" height="85%" src={ProjectImage2} alt="project-2" />
+                <a href="https://github.com/JerryH12/AssetTracking2">Asset Tracking</a>
+              </div>
+              <div style={{"width": 330}} className="leftColumn">
+                <a href="https://github.com/JerryH12/Calculator">Calculator</a>
               </div>
             </div>
           </article>
@@ -298,7 +301,7 @@ function App() {
          <h1>Contact me</h1> 
           <div className="contact">
             <div className="column1">
-              john.doe@example.com
+              <img src={EmailInfo} alt="info"/>
             </div>
           </div>
          </article>    

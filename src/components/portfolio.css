@@ -150,6 +150,11 @@ h4 {
    text-align: center;
 }
 
+.projects a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .about {
     max-width: 450px;
 }
