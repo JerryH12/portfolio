@@ -30,7 +30,7 @@ function App() {
           Hello,
           I'm Jerry and I develop websites, both backend and frontend. It's fun and addictive. On the following pages you can read more about me and my background. I created this portfolio with React.
           </p>
-          <a className="linkButton" target="_blank" href="https://jerryh12.github.io/CV/">Download CV</a>
+          <a className="linkButton" target="_blank" href="https://jerryh12.github.io/CV/Jerry-Hall-konsultCV.pdf">Download CV</a>
           <a className="linkButton" href="#P4">Contact Info</a>
          </article>
       </section>
